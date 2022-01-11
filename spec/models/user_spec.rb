@@ -56,6 +56,16 @@ RSpec.describe User, type: :model do
       expect(result).to be_present
     end
 
-  end
+    it 'is valid with whitespace before or after email' do
+      result = User.authenticate_with_credentials(' johndoe@gmail.com ', 'password123')
+      expect(result).to be_present
+    end
 
+    it 'is valid regardless of casing in email' do
+      result = User.authenticate_with_credentials(' johndoe@GmaIL.com ', 'password123')
+      expect(result).to be_present
+    end
+
+  end
+ 
 end
