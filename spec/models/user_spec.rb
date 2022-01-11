@@ -16,14 +16,19 @@ RSpec.describe User, type: :model do
       expect(subject).to be_valid
     end
 
+    it 'is not valid with a password less than the minimum length' do
+      subject.password = 'doe'
+      expect(subject).to_not be_valid
+      print ".errors.full_messages === "
+      print subject.errors.full_messages
+    end
+
     it 'is not valid without a email' do
       subject.email = nil
       expect(subject).to_not be_valid
       print ".errors.full_messages === "
       print subject.errors.full_messages
     end
-
   end
 
 end
-
