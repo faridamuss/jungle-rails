@@ -23,6 +23,15 @@ RSpec.describe Product, type: :model do
       print subject.errors.full_messages
     end
 
+    it 'is not valid without a quantity' do
+      subject.quantity = nil
+      expect(subject).to_not be_valid
+      print ".errors.full_messages === "
+      print subject.errors.full_messages
+    end
+
+
+
 
   end
 end
