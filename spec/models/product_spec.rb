@@ -2,30 +2,20 @@ require 'rails_helper'
 
 RSpec.describe Product, type: :model do
   describe 'Validations' do
-    it "all 4 fields are saved" do
-      @category = Category.create(name: "Furniture")
-      @product = Product.new(name: "Chair", price: 20, quantity: 2, category: @category)
-      expect(@product.save).to be(true), @product.errors.full_messages
+    let (:category) { Category.create(name: 'testCategory') }
+    subject { Product.new(name: 'test', price_cents: 9000, quantity: 100, category_id: category.id) }
+
+    it 'is valid with valid attributes' do
+      expect(subject).to be_valid
     end
-    it "name is present" do
-      @category = Category.create(name: "Furniture")
-      @product = Product.new(name: "Chair", price: 20, quantity: 2, category: @category)
-      expect(@product.name).should_not be_nil, @product.errors.full_messages
+
+    it 'is not valid without a name' do
+      subject.name = nil
+      expect(subject).to_not be_valid
+      print ".errors.full_messages === "
+      print subject.errors.full_messages
     end
-    it "price is present" do
-      @category = Category.create(name: "Furniture")
-      @product = Product.new(name: "Chair", price: 20, quantity: 2, category: @category)
-      expect(@product.price).should_not be_nil, @product.errors.full_messages
-    end
-    it "quantity is present" do
-      @category = Category.create(name: "Furniture")
-      @product = Product.new(name: "Chair", price: 20, quantity: 2, category: @category)
-      expect(@product.quantity).should_not be_nil, @product.errors.full_messages
-    end
-    it "category is present" do
-      @category = Category.create(name: "Furniture")
-      @product = Product.new(name: "Chair", price: 20, quantity: 2, category: @category)
-      expect(@product.category).should_not be_nil, @product.errors.full_messages
-    end
+
+
   end
 end
