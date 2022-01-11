@@ -42,6 +42,20 @@ RSpec.describe User, type: :model do
       print subject.errors.full_messages
     end
   end
+  
+  describe '.authenticate_with_credentials' do
+    let!(:user) { User.create!(name: 'John', email: 'johndoe@gmail.com', password: 'password123', password_confirmation: 'password123') }
 
+    it 'should return nil if authentication fails' do
+      result = User.authenticate_with_credentials('john@test.com', 'password')
+      expect(result).to be_nil
+    end
+
+    it 'should return the user if authentication passes' do
+      result = User.authenticate_with_credentials('johndoe@gmail.com', 'password123')
+      expect(result).to be_present
+    end
+
+  end
 
 end
