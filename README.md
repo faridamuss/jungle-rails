@@ -33,3 +33,18 @@ More information in their docs: <https://stripe.com/docs/testing#cards>
 * Stripe
 
 ## Screenshots 
+
+!["sold-out"](https://github.com/faridamoussaeff/jungle-rails/blob/master/docs/sold-out-badge.png)
+
+!["my cart"](https://github.com/faridamoussaeff/jungle-rails/blob/master/docs/my-cart.png)
+
+
+
+## Future implementations for improvements 
+
+Jungle is a work in progress and has opportunity for new features and improvements of existing features
+- sign up and login pages lack style;
+- admin authorization is basic and should be updated to be user-specific;
+- user interface in the admin dashboard lacks cohesive style;
+- categories within the admin page could be made clickable;
+- email receipts have not yet been implemented for purchases
