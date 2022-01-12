@@ -55,3 +55,7 @@ bower.json
 
 # Ignore Byebug command history file.
 .byebug_history
+
+app/.DS_Store
+app/views/.DS_Store
+app/views/admin/.DS_Store
