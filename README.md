@@ -34,11 +34,12 @@ More information in their docs: <https://stripe.com/docs/testing#cards>
 
 ## Screenshots 
 
-!["sold-out"](https://github.com/faridamoussaeff/jungle-rails/blob/master/docs/sold-out-badge.png)
+Products 
+!["products"](https://github.com/faridamoussaeff/jungle-rails/blob/master/docs/Screen%20Shot%202022-01-11%20at%209.25.19%20PM.png)
 
-!["my cart"](https://github.com/faridamoussaeff/jungle-rails/blob/master/docs/my-cart.png)
+!["sold-out"](https://github.com/faridamoussaeff/jungle-rails/blob/master/docs/Screen%20Shot%202022-01-11%20at%209.25.40%20PM.png)
 
-
+!["my cart"](https://github.com/faridamoussaeff/jungle-rails/blob/master/docs/Screen%20Shot%202022-01-11%20at%209.25.48%20PM.png)
 
 ## Future implementations for improvements 
 
