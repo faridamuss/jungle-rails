@@ -33,12 +33,13 @@ More information in their docs: <https://stripe.com/docs/testing#cards>
 * Stripe
 
 ## Screenshots 
-
-Products 
+Products
 !["products"](https://github.com/faridamoussaeff/jungle-rails/blob/master/docs/Screen%20Shot%202022-01-11%20at%209.25.19%20PM.png)
 
+Sold Out Badge
 !["sold-out"](https://github.com/faridamoussaeff/jungle-rails/blob/master/docs/Screen%20Shot%202022-01-11%20at%209.25.40%20PM.png)
 
+My cart 
 !["my cart"](https://github.com/faridamoussaeff/jungle-rails/blob/master/docs/Screen%20Shot%202022-01-11%20at%209.25.48%20PM.png)
 
 ## Future implementations for improvements 
