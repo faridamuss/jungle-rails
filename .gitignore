@@ -59,3 +59,5 @@ bower.json
 app/.DS_Store
 app/views/.DS_Store
 app/views/admin/.DS_Store
+
+docs/.DS_Store
