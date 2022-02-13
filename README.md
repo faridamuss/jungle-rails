@@ -32,18 +32,20 @@ More information in their docs: <https://stripe.com/docs/testing#cards>
 * PostgreSQL 9.x
 * Stripe
 
-## Screenshots 
-Products
+## Final Product 
+
+### Product's page
 !["products"](https://github.com/faridamoussaeff/jungle-rails/blob/master/docs/Screen%20Shot%202022-01-11%20at%209.25.19%20PM.png)
 
-Sold Out Badge
+
+### A page with a sold out badge
 !["sold-out"](https://github.com/faridamoussaeff/jungle-rails/blob/master/docs/Screen%20Shot%202022-01-11%20at%209.25.40%20PM.png)
 
-My cart 
+
+### My cart page
 !["my cart"](https://github.com/faridamoussaeff/jungle-rails/blob/master/docs/Screen%20Shot%202022-01-11%20at%209.25.48%20PM.png)
 
 ## Future implementations for improvements 
-
 Jungle is a work in progress and has opportunity for new features and improvements of existing features:
 - sign up and login pages lack style;
 - admin authorization is basic and should be updated to be user-specific;
